@@ -5,14 +5,15 @@ public class Reto_21 {
     new BufferedReader(new InputStreamReader(System.in));
     public static void main (String [] args) throws IOException
     {
-       // while (decision_general == 0)
+        int cerrar_programa = 0;
+       while (cerrar_programa != 1) {
         int Adulto = 100;
         int Nino = 70;
         int Inapam = 50;
         int aBuelito = 100;
         int decision = 0;
         int decision_general = 0;
-        int cerrar_programa = 0;
+    
 
         System.out.println("Bienvenido al parque de diversiones:\n Que boleto deseas comprar?\n1:Adulto\n2:Nino\n3:Adulto con INAPAM\n4:Adulto sin INAPAM\n5:Terminar la maquina vende boletos(solo personal autorizado)\n");
         decision_general = Integer.parseInt(entrada.readLine());
@@ -23,7 +24,6 @@ public class Reto_21 {
             decision = Integer.parseInt(entrada.readLine());
             if (decision == 1){
                 System.out.println("\nHaz comprado el boleto, se te anadira a tu cuenta");
-              //  return Adulto;
             }else{System.out.println("\nNo compraste el boleto");
         }
             break;
@@ -69,5 +69,6 @@ public class Reto_21 {
             break;
         }
     }
+}
  }
 
