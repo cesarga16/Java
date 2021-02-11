@@ -9,13 +9,57 @@ public class Reto_21 {
         int Nino = 70;
         int Inapam = 50;
         int aBuelito = 100;
-        int respuesta = 0;
-        do{
-                
-                System.out.println("Quieres otro boleto?\n Si=1 \t No=0");
-                //respuesta = Integer.parseInt(entrada.readLine());
-                Scanner reader = new Scanner(System.in);
-                char c = reader.next(".").charAt(0);
-        } while (c == 's');
+        int decision = 0;
+        int decision_general = 0;
+
+        System.out.println("Bienvenido al parque de diversiones:\n Que boleto deseas comprar?\n1:Adulto\n2:Nino\n3:Adulto con INAPAM\n4:Adulto sin INAPAM\n5:Terminar la maquina vende boletos(solo personal autorizado)\n");
+        decision_general = Integer.parseInt(entrada.readLine());
+        switch (decision_general){
+
+            case 1:
+            System.out.println("\nEl boleto de adulto cuesta 100$\nDeseas comrparlo?\n\n1:Si\t0:No");
+            decision = Integer.parseInt(entrada.readLine());
+            if (decision == 1){
+                System.out.println("\nHaz comprado el boleto, se te anadira a tu cuenta");
+            }else{System.out.println("\nNo compraste el boleto");
+        }
+            break;
+
+            case 2:
+            System.out.println("\nEl boleto de nino cuesta 70$\nDeseas comrparlo?\n\n1:Si\t0:No");
+            decision = Integer.parseInt(entrada.readLine());
+            if (decision == 1){
+                System.out.println("\nHaz comprado el boleto, se te anadira a tu cuenta");
+            }else{System.out.println("\nNo compraste el boleto");
+        }
+            break;
+
+            case 3:
+            System.out.println("\nEl boleto de adulto con INAPAM cuesta 100$\nDeseas comrparlo?\n\n1:Si\t0:No");
+            decision = Integer.parseInt(entrada.readLine());
+            if (decision == 1){
+                System.out.println("\nHaz comprado el boleto, se te anadira a tu cuenta");
+            }else{System.out.println("\nNo compraste el boleto");
+        }
+            break;
+
+            case 4:
+            System.out.println("\nEl boleto de adulto sin INAPAM cuesta 100$\nDeseas comrparlo?\n\n1:Si\t0:No");
+            decision = Integer.parseInt(entrada.readLine());
+            if (decision == 1){
+                System.out.println("\nHaz comprado el boleto, se te anadira a tu cuenta");
+            }else{System.out.println("\nNo compraste el boleto");
+        }
+            break;
+
+            case 5:
+            System.out.println("Es usted personal autorizado?");
+            break;
+
+            default:
+            System.out.println("Ingresa un valor valido");
+            break;
+        }
     }
-}
+ }
+
